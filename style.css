@@ -28,6 +28,7 @@ h2 {
 #container {
 	margin: 2em auto;
 	width: 100%;
+	max-width: 500px;
 }
 
 #game-board {
