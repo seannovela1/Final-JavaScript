@@ -65,10 +65,13 @@ h2 {
 	border: 2px solid lightgrey;
 	border-color: lightgrey;
 	border-style: solid;
-	display: inline;
+	display: flex;
 	font-size: 6em;
 	line-height: 120px;
 	padding: 20px 40px;
 	height: 150px;
 	width: 150px;
+	justify-content: center;
+    align-items: center;
+
 }
