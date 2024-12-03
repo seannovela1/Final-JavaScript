@@ -73,5 +73,10 @@ h2 {
 	width: 150px;
 	justify-content: center;
     align-items: center;
+	cursor: pointer;
+    background-color: white;
+}
 
+.game-square:hover {
+    background-color: #e0e0e0;
 }
