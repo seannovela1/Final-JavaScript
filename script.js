@@ -56,3 +56,9 @@ function gameOver(message) {
     gameActive = false;
     resultMessage.textContent = message;
     gameOverMessage.style.display = 'block';
+
+
+    // Update score
+    if (message.includes('X')) {
+        scoreboardX.textContent = parseInt(scoreboardX.textContent) + 1;
+    } else if (message.includes('O'))
