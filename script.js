@@ -61,4 +61,7 @@ function gameOver(message) {
     // Update score
     if (message.includes('X')) {
         scoreboardX.textContent = parseInt(scoreboardX.textContent) + 1;
-    } else if (message.includes('O'))
+    } else if (message.includes('O')) {
+        scoreboardO.textContent = parseInt(scoreboardO.textContent) + 1;
+    }
+}
