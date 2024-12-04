@@ -30,3 +30,9 @@ function handleSquareClick(index) {
      // Update board state
      boardState[index] = currentPlayer;
      squares[index].textContent = currentPlayer;
+
+      // Check for a winner or tie
+    if (checkWinner()) {
+        gameOver(currentPlayer + ' Wins!');
+    } else if (boardState.every(square => square !== '')) {
+        gameOver('It\'s a Tie!');
