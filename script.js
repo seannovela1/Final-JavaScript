@@ -51,3 +51,8 @@ function checkWinner() {
     });
 }
 
+
+function gameOver(message) {
+    gameActive = false;
+    resultMessage.textContent = message;
+    gameOverMessage.style.display = 'block';
