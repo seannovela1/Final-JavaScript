@@ -74,3 +74,7 @@ function resetGame() {
     turnElement.textContent = currentPlayer;
     gameOverMessage.style.display = 'none';
 }
+
+squares.forEach((square, index) => {
+    square.addEventListener('click', () => handleSquareClick(index));
+});
