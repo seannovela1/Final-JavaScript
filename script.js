@@ -65,3 +65,8 @@ function gameOver(message) {
         scoreboardO.textContent = parseInt(scoreboardO.textContent) + 1;
     }
 }
+
+function resetGame() {
+    boardState = ['', '', '', '', '', '', '', '', ''];
+    squares.forEach(square => square.textContent = '');
+    gameActive = true;
