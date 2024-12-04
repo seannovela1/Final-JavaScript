@@ -25,3 +25,8 @@ const winningCombinations = [
 
 function handleSquareClick(index) {
     if (boardState[index] !== '' || !gameActive) return;
+
+
+     // Update board state
+     boardState[index] = currentPlayer;
+     squares[index].textContent = currentPlayer;
