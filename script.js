@@ -36,3 +36,9 @@ function handleSquareClick(index) {
         gameOver(currentPlayer + ' Wins!');
     } else if (boardState.every(square => square !== '')) {
         gameOver('It\'s a Tie!');
+    } else {
+        // Switch turn
+        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        turnElement.textContent = currentPlayer;
+    }
+}
