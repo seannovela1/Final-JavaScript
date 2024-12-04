@@ -70,3 +70,7 @@ function resetGame() {
     boardState = ['', '', '', '', '', '', '', '', ''];
     squares.forEach(square => square.textContent = '');
     gameActive = true;
+    currentPlayer = 'X';
+    turnElement.textContent = currentPlayer;
+    gameOverMessage.style.display = 'none';
+}
